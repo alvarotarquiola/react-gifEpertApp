@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  color: #fff;
+}
+.wrap{
+  padding: 20px 30px;
+  background-color: black;
+}
+   
+
+.card-grid{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:  wrap;
+} 
+
+.card-grid > div{
+  width: 31%;
+  margin-bottom: 20px;
+}
+ 
+
+.card-grid > div figure{
+  margin: 0;
+  padding: 0;
+  width: 100%; 
+  border: 5px solid #fff;
+  border-radius: 8px;
+  overflow: hidden; 
+}
+
+.card-grid > div img{  
+  height: auto; 
+  width: 100%; 
+  transform: scale(1.1);
+  transition: transform .3s ease;
+}
+
+.card-grid > div figure img:hover{
+  transform: scale(1.5);
+  transition: transform .3s ease;
+}
+
+.card-grid > div p{
+  margin: 3px 0;
+  line-height: 1;
+  color: #f2f2f2;
+  text-align: center;
+  font-weight: bold;
+} 
+
+hr{
+  border: 1px solid #18A985;
+}
+
+/* ==|====================
+   Base/Form
+   ======================= */
+    
+form{
+  width: 90%;
+  display: block;
+  max-width: 640px;
+  margin-bottom: 30px;
+}   
+
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=date],
+input[type=search],
+input[type=tel],
+input[type=url],
+select,
+textarea,
+.mab-jquery-taginput.tag-input {
+  font-weight: 300;
+  padding: 14px 20px;
+  outline: 0;
+  color: #000;
+  font-size: 16px;
+  line-height: 21px;
+  background-color: #fff;
+  border: 2px solid #676868;
+  font-family: sans-serif;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  border-radius: 4px;
+}
+
+
+input[type=text]::-webkit-input-placeholder,
+input[type=email]::-webkit-input-placeholder,
+input[type=password]::-webkit-input-placeholder,
+input[type=date]::-webkit-input-placeholder,
+input[type=search]::-webkit-input-placeholder,
+input[type=tel]::-webkit-input-placeholder,
+input[type=url]::-webkit-input-placeholder,
+select::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+.mab-jquery-taginput.tag-input::-webkit-input-placeholder {
+  color: #6e6969;
+}
+
+input[type=text]:-moz-placeholder,
+input[type=email]:-moz-placeholder,
+input[type=password]:-moz-placeholder,
+input[type=date]:-moz-placeholder,
+input[type=search]:-moz-placeholder,
+input[type=tel]:-moz-placeholder,
+input[type=url]:-moz-placeholder,
+select:-moz-placeholder,
+textarea:-moz-placeholder,
+.mab-jquery-taginput.tag-input:-moz-placeholder {
+  color: #6e6969;
+}
+
+input[type=text]:-ms-input-placeholder,
+input[type=email]:-ms-input-placeholder,
+input[type=password]:-ms-input-placeholder,
+input[type=date]:-ms-input-placeholder,
+input[type=search]:-ms-input-placeholder,
+input[type=tel]:-ms-input-placeholder,
+input[type=url]:-ms-input-placeholder,
+select:-ms-input-placeholder,
+textarea:-ms-input-placeholder,
+.mab-jquery-taginput.tag-input:-ms-input-placeholder {
+  color: #6e6969;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=date]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=url]:focus,
+select:focus,
+textarea:focus,
+.mab-jquery-taginput.tag-input:focus {
+  border-color: #1295FC;
+}
+
+
+.container-label-personalizado {
+  position: relative;
+  display: block;
+}
+
+.container-label-personalizado .label-input {
+  position: absolute;
+  font-size: 0.9375em;
+  left: 0.9em;
+  width: auto;
+  color: #6e6969;
+  line-height: 1;
+  transition: all 0.3s ease-in-out;
+  bottom: 50%;
+  margin-bottom: -8px;
+  padding: 0;
+  pointer-events: none;
+  font-family: "locator-regular";
+}
+
+@media screen and (min-width: 1024px) {
+  .container-label-personalizado .label-input {
+    font-size: 1em;
+  }
+}
+
+.container-label-personalizado input::-webkit-input-placeholder,
+.container-label-personalizado textarea::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.container-label-personalizado input:-moz-placeholder,
+.container-label-personalizado textarea:-moz-placeholder {
+  color: transparent;
+}
+
+.container-label-personalizado input:-ms-input-placeholder,
+.container-label-personalizado textarea:-ms-input-placeholder {
+  color: transparent;
+}
+
+.container-label-personalizado textarea + .label-input {
+  bottom: calc(100% - 1.25em);
+}
+
+.container-label-personalizado.active-focus .label-input {
+  top: auto;
+  bottom: 100%;
+  font-size: 0.875em !important;
+  color: #6e6969;
+  background: #fff;
+  font-family: "locator-regular";
+}
+
+.container-label-personalizado.active-focus input::-webkit-input-placeholder,
+.container-label-personalizado.active-focus textarea::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.container-label-personalizado.active-focus input:-moz-placeholder,
+.container-label-personalizado.active-focus textarea:-moz-placeholder {
+  color: transparent;
+}
+
+.container-label-personalizado.active-focus input:-ms-input-placeholder,
+.container-label-personalizado.active-focus textarea:-ms-input-placeholder {
+  color: transparent;
+}
